@@ -167,17 +167,48 @@ Interests:
 
 ## ◈ 09 — FEATURED PROJECTS
 
+## 🚀 Featured Projects
+
 <div align="center">
 
-<a href="https://github.com/suryadev111/rock_paper_scissors">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=suryadev111&repo=rock_paper_scissors&theme=radical" />
+<table>
+<tr>
+<td width="50%" align="center" bgcolor="#0d1117">
+
+### 🎮 Rock Paper Scissors
+
+<img src="https://placehold.co/500x180/0d1117/00f5ff?text=ROCK+PAPER+SCISSORS" width="100%" alt="Rock Paper Scissors"/>
+
+**Interactive Game Project**
+
+A fun game built with interactive gameplay.
+
+[<img src="https://img.shields.io/badge/VIEW_PROJECT-00F5FF?style=for-the-badge&logo=github&logoColor=black" />](https://github.com/suryadev111/rock_paper_scissors)
+
+</td>
+<td width="50%" align="center" bgcolor="#0d1117">
+
+### ❌ Tic Tac Toe
+
+<img src="https://placehold.co/500x180/0d1117/00f5ff?text=TIC+TAC+TOE" width="100%" alt="Tic Tac Toe"/>
+
+**Classic Strategy Game**
+
+A simple and entertaining Tic Tac Toe project.
+
+[<img src="https://img.shields.io/badge/VIEW_PROJECT-00F5FF?style=for-the-badge&logo=github&logoColor=black" />](https://github.com/suryadev111/Tic-Tac-Toe)
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<a href="https://github.com/suryadev111?tab=repositories">
+<img src="https://img.shields.io/badge/EXPLORE_ALL_PROJECTS-0D1117?style=for-the-badge&logo=github&logoColor=00F5FF" />
 </a>
 
-<a href="https://github.com/suryadev111/Tic-Tac-Toe">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=suryadev111&repo=Tic-Tac-Toe&theme=radical" />
-</a>
-
-<br/><br/>
+</div>
 
 <a href="https://github.com/suryadev111?tab=repositories">
 <img src="https://img.shields.io/badge/EXPLORE%20ALL%20REPOSITORIES-00E5FF?style=for-the-badge&logo=github&logoColor=white" />
