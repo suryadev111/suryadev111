@@ -4,7 +4,7 @@ name: WakaTime Stats
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 */6 * * *"
 
 permissions:
   contents: write
@@ -24,4 +24,5 @@ jobs:
           LANG_COUNT: 8
           SHOW_TIME: true
           SHOW_TOTAL: true
+          SHOW_MASKED_TIME: true
           COMMIT_MESSAGE: "Updated WakaTime statistics"
