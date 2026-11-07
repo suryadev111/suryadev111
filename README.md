@@ -1,165 +1,172 @@
 
+<!-- 🌊 1. ANIMATED HEADER -->
 <div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00C9FF,100:92FE9D&height=200&section=header&text=Surya%20Shekhar%20Bose&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=35" width="100%" />
+</div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=190&section=header&text=Surya%20Shekhar%20Bose&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Developer%20%7C%20Java%20Enthusiast%20%7C%20Problem%20Solver&descAlignY=57&descSize=15" width="100%" alt="Surya Shekhar Bose profile banner"/>
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=21&pause=1000&color=36BCF7&center=true&vCenter=true&width=650&lines=Java+Enthusiast+%E2%98%95;Aspiring+Software+Developer+%F0%9F%92%BB;Spring+Boot+Learner+%F0%9F%8C%B1;Hackathon+Winner+%F0%9F%8F%86;Always+Building+Something+Cool+%F0%9F%9A%80" alt="Typing SVG"/>
-</p>
-
-# Hey, I'm Surya Shekhar Bose 👋
-
-### B.Tech IT Student · Aspiring Software Developer · Java Enthusiast
-
-Building projects, solving problems, and learning something new every day.
-
-[![Profile views](https://komarev.com/ghpvc/?username=suryadev111&label=PROFILE%20VIEWS&color=0e75b6&style=for-the-badge)](https://github.com/suryadev111)
-[![Followers](https://img.shields.io/github/followers/suryadev111?label=FOLLOWERS&style=for-the-badge&logo=github&color=181717)](https://github.com/suryadev111?tab=followers)
-
-[LinkedIn](https://linkedin.com/in/surya-shekhar-bose) ·
-[Instagram](https://instagram.com/shadow.xd_) ·
-[Email](mailto:suryax6282@gmail.com) ·
-[Repositories](https://github.com/suryadev111?tab=repositories)
-
+<!-- ⌨️ 2. TYPING INTRODUCTION -->
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00C9FF&center=true&vCenter=true&width=700&lines=Full+Stack+Developer;Java+%7C+Spring+Boot+Enthusiast;Hackathon+Winner;Always+Learning+Something+New!" alt="Typing SVG" />
 </div>
 
 ---
 
+<!-- 👨‍💻 3. ABOUT ME -->
 ## 👨‍💻 About Me
 
-- 🎓 B.Tech student specializing in Information Technology.
-- 🌱 Currently learning **Spring Boot** and full-stack development.
-- 🔭 Working on **Hackathon Sim**.
-- 🤝 Open to collaborating on software projects and hackathons.
-- 🏆 **1× Hackathon Winner**.
-- 💬 Ask me about **Java, Spring Boot, and full-stack development**.
-- 🎮 Gamer and technology enthusiast.
+- 🎓 B.Tech Information Technology student
+- 💻 Learning **Java, Spring Boot, and Full Stack Development**
+- 🚀 Building **Hackathon Sim** and other projects
+- 🏆 1× Hackathon Winner
+- 🌱 Always exploring new technologies and building cool things
+- 🎮 Gamer when I'm not coding
 
 ---
 
+<!-- 🧰 4. TECH STACK -->
 ## 🧰 Tech Stack
 
 <div align="center">
 
 **Languages**
 
-<img src="https://skillicons.dev/icons?i=java,python,c,js" alt="Java, Python, C and JavaScript"/>
+<img src="https://skillicons.dev/icons?i=java,python,c,js" />
 
 **Frontend**
 
-<img src="https://skillicons.dev/icons?i=html,css,react,tailwind" alt="HTML, CSS, React and Tailwind CSS"/>
+<img src="https://skillicons.dev/icons?i=html,css,react,tailwind" />
 
-**Backend & Databases**
+**Backend & Database**
 
-<img src="https://skillicons.dev/icons?i=spring,nodejs,flask,django,mysql,mongodb,postgres" alt="Spring, Node.js, Flask, Django, MySQL, MongoDB and PostgreSQL"/>
+<img src="https://skillicons.dev/icons?i=spring,nodejs,flask,django,mysql,mongodb,postgres" />
 
 **Tools & Platforms**
 
-<img src="https://skillicons.dev/icons?i=git,github,docker,azure,firebase,figma,arduino" alt="Git, GitHub, Docker, Azure, Firebase, Figma and Arduino"/>
+<img src="https://skillicons.dev/icons?i=git,github,docker,azure,firebase,figma,arduino" />
 
 </div>
 
 ---
 
-## 📊 GitHub Analytics
-
-<p align="center">
-  <img src="./github-stats.svg" width="100%" alt="GitHub Statistics"/>
-</p>
-
-<p align="center">
-  <img src="./top-languages.svg" width="49%" alt="Top Languages"/>
-  <img src="./achievements.svg" width="49%" alt="GitHub Achievements"/>
-</p>
-
-> Analytics images above are generated and committed to this repository by GitHub Actions. The first workflow run creates them; until then, these image slots will not display.
-
----
-
-
-## 🏆 GitHub Trophies
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=suryadev111&theme=algolia&column=4" width="100%" alt="GitHub Trophies"/>
-</p>
-
----
-
-## 📅 Contribution Activity
-
-<p align="center">
-  <img src="./contribution-calendar.svg" width="100%" alt="Contribution Calendar"/>
-</p>
-
----
-
-## 🐍 Watch My Contributions Get Eaten!
+<!-- 📊 5. GITHUB STATS + STREAK -->
+## 📊 GitHub Stats
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/suryadev111/suryadev111/output/github-contribution-grid-snake-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/suryadev111/suryadev111/output/github-contribution-grid-snake.svg"/>
-  <img src="https://raw.githubusercontent.com/suryadev111/suryadev111/output/github-contribution-grid-snake.svg" width="100%" alt="GitHub Contribution Snake"/>
-</picture>
+<img height="180" src="https://github-readme-stats-eight-theta.vercel.app/api?username=suryadev111&cache_seconds=7200&layout=compact&theme=radical&border_radius=10" />
+
+<img height="180" src="https://streak-stats.demolab.com/?user=suryadev111&theme=radical&hide_border=true&cache_seconds=86400" />
 
 </div>
 
 ---
 
-## ⏱️ Weekly Coding Activity
+<!-- 🏆 6. GITHUB TROPHIES -->
+## 🏆 GitHub Trophies
+
+<div align="center">
+  <img src="https://trophy.ryglcloud.net/?username=suryadev111&theme=radical&no-frame=true&no-bg=true&margin-w=4&cache_seconds=86400" width="100%" />
+</div>
+
+---
+
+<!-- 📈 7. ACTIVITY GRAPH -->
+## 📈 Contribution Activity
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=suryadev111&theme=react-dark&radius=10&area=true" width="100%" />
+</div>
+
+---
+
+<!-- 📅 8. CONTRIBUTION CALENDAR -->
+## 📅 Contribution Calendar
+
+<div align="center">
+  <img src="https://github.com/suryadev111/suryadev111/blob/main/contribution-calendar.svg" width="100%" alt="GitHub Contribution Calendar" />
+</div>
+
+---
+
+<!-- 🐍 9. CONTRIBUTION SNAKE -->
+## 🐍 Watch My Contributions Get Eaten!
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/suryadev111/suryadev111/output/github-contribution-grid-snake.svg" width="100%" alt="Contribution Snake Animation" />
+</div>
+
+---
+
+<!-- ⏱️ 10. WAKATIME -->
+## ⏱️ Coding Activity
+
+<div align="center">
 
 <!--START_SECTION:waka-->
 <!--END_SECTION:waka-->
 
+</div>
+
 ---
 
+<!-- 🚀 11. FEATURED PROJECTS -->
 ## 🚀 Featured Projects
 
 <div align="center">
 
 <a href="https://github.com/suryadev111/rock_paper_scissors">
-  <img src="https://img.shields.io/badge/🎮%20Rock%20Paper%20Scissors-View%20Repository-181717?style=for-the-badge&logo=github" alt="Rock Paper Scissors repository"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=suryadev111&repo=rock_paper_scissors&theme=radical" />
 </a>
 
 <a href="https://github.com/suryadev111/Tic-Tac-Toe">
-  <img src="https://img.shields.io/badge/❌%20Tic%20Tac%20Toe-View%20Repository-181717?style=for-the-badge&logo=github" alt="Tic Tac Toe repository"/>
-</a>
-
-<a href="https://github.com/suryadev111?tab=repositories">
-  <img src="https://img.shields.io/badge/Explore-All%20Repositories-2962FF?style=for-the-badge&logo=github" alt="All repositories"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=suryadev111&repo=Tic-Tac-Toe&theme=radical" />
 </a>
 
 </div>
-
----
-
-## 🏆 Highlights
 
 <div align="center">
-
-<img src="https://img.shields.io/badge/🏆-1×%20Hackathon%20Winner-orange?style=for-the-badge" alt="One-time hackathon winner"/>
-<img src="https://img.shields.io/badge/🌱-Always%20Learning-2ea44f?style=for-the-badge" alt="Always learning"/>
-<img src="https://img.shields.io/badge/💻-Building%20Projects-blue?style=for-the-badge" alt="Building projects"/>
-
+  <a href="https://github.com/suryadev111?tab=repositories">
+    <img src="https://img.shields.io/badge/Explore%20All%20Repositories-00C9FF?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
 </div>
 
 ---
 
+<!-- 🌆 12. 3D CITY ANIMATION -->
+## 🌆 Welcome to My Digital World
+
+<div align="center">
+  <img src="./3d-city.gif" width="100%" alt="Animated 3D Neon City" />
+</div>
+
+---
+
+<!-- 🤝 13. LET'S CONNECT -->
 ## 🤝 Let's Connect
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Surya%20Shekhar%20Bose-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/surya-shekhar-bose)
-[![Instagram](https://img.shields.io/badge/Instagram-shadow.xd_-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/shadow.xd_)
-[![Email](https://img.shields.io/badge/Gmail-Contact%20Me-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:suryax6282@gmail.com)
+<a href="https://linkedin.com/in/surya-shekhar-bose">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+
+<a href="https://instagram.com/shadow.xd_">
+  <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+</a>
+
+<a href="mailto:suryax6282@gmail.com">
+  <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>
 
 </div>
 
+---
+
+<!-- 👁️ PROFILE VIEWS -->
 <div align="center">
+  <img src="https://komarev.com/ghpvc/?username=suryadev111&label=Profile%20Views&color=00C9FF&style=for-the-badge" />
+</div>
 
-**Thanks for visiting! Keep learning, keep building, and keep shipping. 🚀**
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=100&section=footer" width="100%" alt="Footer banner"/>
-
+<div align="center">
+  <h3>✨ Thanks for visiting my profile! Keep coding and keep building. ✨</h3>
 </div>
