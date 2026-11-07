@@ -127,9 +127,11 @@ Interests:
 ## ◈ 06 — CONTRIBUTION CALENDAR
 
 <div align="center">
-
-<img src="https://github.com/suryadev111/suryadev111/blob/main/contribution-calendar.svg" width="100%" alt="GitHub Contribution Calendar" />
-
+  <img
+    src="https://ghchart.rshah.org/00E5FF/suryadev111"
+    width="100%"
+    alt="Dark-themed GitHub Contribution Calendar"
+  />
 </div>
 
 ---
@@ -140,7 +142,11 @@ Interests:
 
 ### 🐍 Watch My Contributions Get Eaten!
 
-<img src="https://raw.githubusercontent.com/suryadev111/suryadev111/output/github-contribution-grid-snake.svg" width="100%" alt="Contribution Snake Animation" />
+<img
+  src="https://raw.githubusercontent.com/suryadev111/suryadev111/output/github-contribution-grid-snake-dark.svg"
+  width="100%"
+  alt="Dark Contribution Snake Animation"
+/>
 
 </div>
 
