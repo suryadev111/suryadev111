@@ -1,6 +1,11 @@
+
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=190&section=header&text=Surya%20Shekhar%20Bose&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Developer%20%7C%20Java%20Enthusiast%20%7C%20Problem%20Solver&descAlignY=57&descSize=15" width="100%" alt="Surya Shekhar Bose profile banner"/>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=21&pause=1000&color=36BCF7&center=true&vCenter=true&width=650&lines=Java+Enthusiast+%E2%98%95;Aspiring+Software+Developer+%F0%9F%92%BB;Spring+Boot+Learner+%F0%9F%8C%B1;Hackathon+Winner+%F0%9F%8F%86;Always+Building+Something+Cool+%F0%9F%9A%80" alt="Typing SVG"/>
+</p>
 
 # Hey, I'm Surya Shekhar Bose 👋
 
@@ -67,13 +72,46 @@ Building projects, solving problems, and learning something new every day.
   <img src="./achievements.svg" width="49%" alt="GitHub Achievements"/>
 </p>
 
+> Analytics images above are generated and committed to this repository by GitHub Actions. The first workflow run creates them; until then, these image slots will not display.
+
+---
+
+## 🏆 GitHub Trophies
+
+<div align="center">
+
+<img src="https://github-profile-trophy.vercel.app/?username=suryadev111&theme=algolia&no-frame=true&no-bg=true&margin-w=8&column=4" width="100%" alt="GitHub Trophies"/>
+
+</div>
+
+---
+
 ## 📅 Contribution Activity
 
 <p align="center">
   <img src="./contribution-calendar.svg" width="100%" alt="Contribution Calendar"/>
 </p>
 
-> Analytics images above are generated and committed to this repository by GitHub Actions. The first workflow run creates them; until then, these image slots will not display.
+---
+
+## 🐍 Watch My Contributions Get Eaten!
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/suryadev111/suryadev111/output/github-contribution-grid-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/suryadev111/suryadev111/output/github-contribution-grid-snake.svg"/>
+  <img src="https://raw.githubusercontent.com/suryadev111/suryadev111/output/github-contribution-grid-snake.svg" width="100%" alt="GitHub Contribution Snake"/>
+</picture>
+
+</div>
+
+---
+
+## ⏱️ Weekly Coding Activity
+
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
 
 ---
 
