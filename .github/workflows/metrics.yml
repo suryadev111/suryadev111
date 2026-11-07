@@ -45,6 +45,7 @@ jobs:
           output_action: commit
 
       # 3. Green Contribution Calendar
+             # 3. Green Contribution Calendar
       - name: Generate Green Contribution Calendar
         uses: lowlighter/metrics@latest
         with:
