@@ -71,16 +71,18 @@
 ---
 
 
+
 <!-- 📈 7. ACTIVITY GRAPH -->
 <h2 align="center">📈 Contribution Activity</h2>
 
 <div align="center">
   <img
-    src="https://github-readme-activity-graph.vercel.app/graph?username=suryadev111&theme=react-dark&hide_border=true&area=true"
+    src="./activity-graph.svg"
     width="100%"
-    alt="GitHub Contribution Activity Graph"
+    alt="Contribution Activity Graph"
   />
 </div>
+
 
 ---
 
