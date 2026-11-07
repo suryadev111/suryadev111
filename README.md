@@ -1,6 +1,7 @@
- <div align="center">
+ 
+<div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,40:17112E,100:00E5FF&height=230&section=header&text=SURYA%20SHEKHAR%20BOSE&fontSize=38&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=FULL%20STACK%20DEVELOPER%20%7C%20JAVA%20ENTHUSIAST%20%7C%20TECH%20EXPLORER&descSize=13&descAlignY=57&descColor=00E5FF" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050816,40:6C63FF,100:00E5FF&height=230&section=header&text=SURYA%20SHEKHAR%20BOSE&fontSize=38&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=FULL%20STACK%20DEVELOPER%20%7C%20JAVA%20ENTHUSIAST%20%7C%20TECH%20EXPLORER&descSize=13&descAlignY=57&descColor=00E5FF" width="100%" />
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&pause=1000&color=00E5FF&center=true&vCenter=true&width=750&lines=Full+Stack+Developer;Java+%7C+Spring+Boot+Enthusiast;Hackathon+Winner;Building+Ideas+Into+Reality;Always+Learning+Something+New!" alt="Typing SVG" />
 
@@ -16,20 +17,52 @@
 
 ## ◈ 01 — SYSTEM PROFILE
 
-<div align="center">
-
-<img src="https://img.shields.io/badge/ABOUT%20ME-000000?style=for-the-badge&logo=github&logoColor=00E5FF" />
-
-</div>
+<table>
+<tr>
+<td width="60%" valign="top">
 
 ### 👨‍💻 About Me
+
+```yaml
+Name: Surya Shekhar Bose
+Role: Full Stack Developer
+Education: B.Tech Information Technology
+Achievement: 1x Hackathon Winner
+Currently_Learning:
+  - Java
+  - Spring Boot
+  - Full Stack Development
+Currently_Building:
+  - Hackathon Sim
+  - Personal Projects
+Interests:
+  - Programming
+  - Technology
+  - Gaming
+  - Innovation
+```
 
 - 🎓 B.Tech Information Technology student
 - 💻 Learning **Java, Spring Boot, and Full Stack Development**
 - 🚀 Building **Hackathon Sim** and other projects
 - 🏆 1× Hackathon Winner
-- 🌱 Always exploring new technologies and building cool things
+- 🌱 Always exploring new technologies
 - 🎮 Gamer when I'm not coding
+
+</td>
+<td width="40%" align="center" valign="middle">
+
+<img src="https://skillicons.dev/icons?i=java,python,js,react,spring&perline=3" width="100%" />
+
+<br/><br/>
+
+**BUILD. LEARN. INNOVATE.**
+
+<sub>Turning caffeine into code.</sub>
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -198,7 +231,7 @@
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00E5FF,50:6C63FF,100:000000&height=120&section=footer" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00E5FF,50:6C63FF,100:050816&height=120&section=footer" width="100%" />
 
 ### ✨ Thanks for visiting my profile!
 
