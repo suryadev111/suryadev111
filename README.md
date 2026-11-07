@@ -70,11 +70,16 @@
 
 ---
 
+
 <!-- 📈 7. ACTIVITY GRAPH -->
-## 📈 Contribution Activity
+<h2 align="center">📈 Contribution Activity</h2>
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=suryadev111&theme=react-dark&radius=10&area=true" width="100%" />
+  <img
+    src="https://github-readme-activity-graph.vercel.app/graph?username=suryadev111&theme=react-dark&hide_border=true&area=true"
+    width="100%"
+    alt="GitHub Contribution Activity Graph"
+  />
 </div>
 
 ---
