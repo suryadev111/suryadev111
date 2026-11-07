@@ -208,13 +208,7 @@ A simple and entertaining Tic Tac Toe project.
 <img src="https://img.shields.io/badge/EXPLORE_ALL_PROJECTS-0D1117?style=for-the-badge&logo=github&logoColor=00F5FF" />
 </a>
 
-</div>
 
-<a href="https://github.com/suryadev111?tab=repositories">
-<img src="https://img.shields.io/badge/EXPLORE%20ALL%20REPOSITORIES-00E5FF?style=for-the-badge&logo=github&logoColor=white" />
-</a>
-
-</div>
 
 ---
 
