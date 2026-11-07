@@ -58,25 +58,20 @@ Building projects, solving problems, and learning something new every day.
 
 ## 📊 GitHub Analytics
 
-<div align="center">
+<p align="center">
+  <img src="./github-stats.svg" width="100%" alt="GitHub Statistics"/>
+</p>
 
-### GitHub Overview
+<p align="center">
+  <img src="./top-languages.svg" width="49%" alt="Top Languages"/>
+  <img src="./achievements.svg" width="49%" alt="GitHub Achievements"/>
+</p>
 
-<img src="./github-stats.svg" width="100%" alt="GitHub overview statistics"/>
+## 📅 Contribution Activity
 
-### Most Used Languages
-
-<img src="./top-languages.svg" width="100%" alt="Most used programming languages"/>
-
-### Contribution Activity
-
-<img src="./contribution-calendar.svg" width="100%" alt="Isometric GitHub contribution calendar"/>
-
-### GitHub Achievements
-
-<img src="./achievements.svg" width="100%" alt="GitHub achievements"/>
-
-</div>
+<p align="center">
+  <img src="./contribution-calendar.svg" width="100%" alt="Contribution Calendar"/>
+</p>
 
 > Analytics images above are generated and committed to this repository by GitHub Actions. The first workflow run creates them; until then, these image slots will not display.
 
