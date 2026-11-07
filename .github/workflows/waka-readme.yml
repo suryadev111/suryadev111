@@ -14,15 +14,135 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Generate WakaTime Stats
-        uses: athul/waka-readme@master
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          SHOW_TITLE: true
-          SECTION_NAME: waka
-          TIME_RANGE: last_7_days
-          LANG_COUNT: 8
-          SHOW_TIME: true
-          SHOW_TOTAL: true
-          SHOW_MASKED_TIME: true
-          COMMIT_MESSAGE: "Updated WakaTime statistics"
+          python-version: "3.x"
+
+      - name: Fetch WakaTime summaries
+        env:
+          WAKATIME_TOKEN: ${{ secrets.WAKATIME_API_KEY }}
+        run: |
+          python - <<'PY'
+          import os
+          import requests
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+
+          token = os.environ["WAKATIME_TOKEN"]
+
+          response = requests.get(
+              "https://wakatime.com/api/v1/users/current/summaries",
+              headers={"Authorization": f"Bearer {token}"},
+              params={
+                  "range": "Last 7 Days",
+                  "timezone": "Asia/Kolkata"
+              },
+              timeout=30
+          )
+
+          response.raise_for_status()
+          data = response.json()["data"]
+
+          total = 0
+          languages = {}
+
+          for day in data:
+              total += day["grand_total"]["total_seconds"]
+
+              for lang in day.get("languages", []):
+                  name = lang["name"]
+                  languages[name] = (
+                      languages.get(name, 0)
+                      + lang["total_seconds"]
+                  )
+
+          def duration(seconds):
+              seconds = int(round(seconds))
+              hours, remainder = divmod(seconds, 3600)
+              minutes, seconds = divmod(remainder, 60)
+
+              parts = []
+              if hours:
+                  parts.append(f"{hours} hrs")
+              if minutes:
+                  parts.append(f"{minutes} mins")
+              if seconds or not parts:
+                  parts.append(f"{seconds} secs")
+
+              return " ".join(parts)
+
+          dates = sorted(
+              day["range"]["date"] for day in data
+          )
+
+          start = datetime.strptime(
+              dates[0], "%Y-%m-%d"
+          ).strftime("%d %B %Y")
+
+          end = datetime.strptime(
+              dates[-1], "%Y-%m-%d"
+          ).strftime("%d %B %Y")
+
+          lines = [
+              f"From: {start} - To: {end}",
+              "",
+              f"Total Time: {duration(total)}",
+              "",
+              "Languages:"
+          ]
+
+          if languages:
+              for name, seconds in sorted(
+                  languages.items(),
+                  key=lambda item: item[1],
+                  reverse=True
+              ):
+                  lines.append(
+                      f"{name}: {duration(seconds)}"
+                  )
+          else:
+              lines.append("No activity tracked")
+
+          content = "\n".join(lines)
+
+          with open("README.md", "r", encoding="utf-8") as f:
+              readme = f.read()
+
+          start_marker = "<!--START_SECTION:waka-->"
+          end_marker = "<!--END_SECTION:waka-->"
+
+          if start_marker not in readme or end_marker not in readme:
+              raise Exception("WakaTime README markers missing")
+
+          before, remainder = readme.split(start_marker, 1)
+          _, after = remainder.split(end_marker, 1)
+
+          updated = (
+              before
+              + start_marker
+              + "\n\n```txt\n"
+              + content
+              + "\n```\n\n"
+              + end_marker
+              + after
+          )
+
+          with open("README.md", "w", encoding="utf-8") as f:
+              f.write(updated)
+
+          print(content)
+          PY
+
+      - name: Commit updated README
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet || (
+            git commit -m "Updated WakaTime statistics" &&
+            git push
+          )
