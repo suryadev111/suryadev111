@@ -160,15 +160,11 @@ Interests:
 
 <!--START_SECTION:waka-->
 
-```txt
-From: 01 November 2026 - To: 07 November 2026
-
-Total Time: 15 mins 21 secs
-
-Languages:
-Java: 10 mins 58 secs
-PowerShell: 4 mins 23 secs
-```
+<div align="center">
+  <img src="https://raw.githubusercontent.com/suryadev111/suryadev111/main/assets/wakatime-dashboard.svg"
+       width="100%"
+       alt="WakaTime Coding Analytics Dashboard"/>
+</div>
 
 <!--END_SECTION:waka-->
 
