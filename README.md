@@ -215,7 +215,9 @@ Interests:
 <!--START_SECTION:waka-->
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/suryadev111/suryadev111/main/assets/wakatime-dashboard.svg" width="100%" alt="WakaTime Coding Analytics Dashboard"/>
+  <img src="https://raw.githubusercontent.com/suryadev111/suryadev111/main/assets/wakatime-dashboard.svg"
+       width="100%"
+       alt="WakaTime Coding Analytics Dashboard"/>
 </div>
 
 <!--END_SECTION:waka-->

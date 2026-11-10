@@ -2,305 +2,605 @@
 <svg xmlns="http://www.w3.org/2000/svg"
      width="1000" height="620"
      viewBox="0 0 1000 620">
+
 <defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+
+  <linearGradient id="bg"
+                  x1="0" y1="0"
+                  x2="1" y2="1">
     <stop offset="0%" stop-color="#090D1A"/>
     <stop offset="100%" stop-color="#17102D"/>
   </linearGradient>
-  <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="0">
+
+  <linearGradient id="cyan"
+                  x1="0" y1="0"
+                  x2="1" y2="0">
     <stop offset="0%" stop-color="#00E5FF"/>
     <stop offset="100%" stop-color="#7B61FF"/>
   </linearGradient>
-  <linearGradient id="purple" x1="0" y1="0" x2="1" y2="0">
+
+  <linearGradient id="purple"
+                  x1="0" y1="0"
+                  x2="1" y2="0">
     <stop offset="0%" stop-color="#8B5CF6"/>
     <stop offset="100%" stop-color="#EC4899"/>
   </linearGradient>
+
   <filter id="glow">
-    <feGaussianBlur stdDeviation="4" result="blur"/>
+    <feGaussianBlur stdDeviation="4"
+                    result="blur"/>
     <feMerge>
       <feMergeNode in="blur"/>
       <feMergeNode in="SourceGraphic"/>
     </feMerge>
   </filter>
+
 </defs>
 
-<rect width="1000" height="620" rx="24" fill="url(#bg)"/>
-<rect x="1" y="1" width="998" height="618" rx="23"
-      fill="none" stroke="#34305A" stroke-width="2"/>
+<rect width="1000" height="620"
+      rx="24" fill="url(#bg)"/>
 
-<text x="40" y="52" fill="#FFFFFF"
+<rect x="1" y="1"
+      width="998" height="618"
+      rx="23"
+      fill="none"
+      stroke="#34305A"
+      stroke-width="2"/>
+
+<text x="40" y="52"
+      fill="#FFFFFF"
       font-family="Arial,sans-serif"
-      font-size="25" font-weight="bold">
+      font-size="25"
+      font-weight="bold">
   CODING ANALYTICS
 </text>
-<text x="42" y="78" fill="#8B91A8"
-      font-family="Arial,sans-serif" font-size="12">
+
+<text x="42" y="78"
+      fill="#8B91A8"
+      font-family="Arial,sans-serif"
+      font-size="12">
   WAKATIME DEVELOPER DASHBOARD
 </text>
-<circle cx="950" cy="43" r="6" fill="#00E5A8"
+
+<circle cx="950" cy="43"
+        r="6"
+        fill="#00E5A8"
         filter="url(#glow)"/>
-<text x="935" y="65" fill="#00E5A8"
+
+<text x="935" y="65"
+      fill="#00E5A8"
       text-anchor="end"
-      font-family="Arial,sans-serif" font-size="11">
+      font-family="Arial,sans-serif"
+      font-size="11">
   TRACKING ACTIVE
 </text>
 
 
-    <rect x="35" y="105" width="220" height="100"
-          rx="14" fill="#151A2D"
+
+    <rect x="35" y="105"
+          width="220" height="100"
+          rx="14"
+          fill="#151A2D"
           stroke="#34305A"/>
-    <text x="51" y="133" fill="#929BB5"
+
+    <text x="51" y="133"
+          fill="#929BB5"
           font-family="Arial,sans-serif"
-          font-size="11">WEEKLY CODING</text>
-    <text x="51" y="174" fill="#00E5FF"
+          font-size="11">
+      WEEKLY CODING
+    </text>
+
+    <text x="51" y="174"
+          fill="#00E5FF"
           font-family="Arial,sans-serif"
-          font-size="23" font-weight="bold">
-      15m 21s
+          font-size="23"
+          font-weight="bold">
+      53m 32s
     </text>
     
 
-    <rect x="272" y="105" width="220" height="100"
-          rx="14" fill="#151A2D"
+    <rect x="272" y="105"
+          width="220" height="100"
+          rx="14"
+          fill="#151A2D"
           stroke="#34305A"/>
-    <text x="288" y="133" fill="#929BB5"
+
+    <text x="288" y="133"
+          fill="#929BB5"
           font-family="Arial,sans-serif"
-          font-size="11">DAILY AVERAGE</text>
-    <text x="288" y="174" fill="#A78BFA"
+          font-size="11">
+      DAILY AVERAGE
+    </text>
+
+    <text x="288" y="174"
+          fill="#A78BFA"
           font-family="Arial,sans-serif"
-          font-size="23" font-weight="bold">
-      2m 12s
+          font-size="23"
+          font-weight="bold">
+      7m 39s
     </text>
     
 
-    <rect x="509" y="105" width="220" height="100"
-          rx="14" fill="#151A2D"
+    <rect x="509" y="105"
+          width="220" height="100"
+          rx="14"
+          fill="#151A2D"
           stroke="#34305A"/>
-    <text x="525" y="133" fill="#929BB5"
+
+    <text x="525" y="133"
+          fill="#929BB5"
           font-family="Arial,sans-serif"
-          font-size="11">MOST ACTIVE DAY</text>
-    <text x="525" y="174" fill="#F472B6"
+          font-size="11">
+      MOST ACTIVE DAY
+    </text>
+
+    <text x="525" y="174"
+          fill="#F472B6"
           font-family="Arial,sans-serif"
-          font-size="23" font-weight="bold">
-      Sat, 07 Nov
+          font-size="23"
+          font-weight="bold">
+      Tue, 10 Nov
     </text>
     
 
-    <rect x="746" y="105" width="220" height="100"
-          rx="14" fill="#151A2D"
+    <rect x="746" y="105"
+          width="220" height="100"
+          rx="14"
+          fill="#151A2D"
           stroke="#34305A"/>
-    <text x="762" y="133" fill="#929BB5"
+
+    <text x="762" y="133"
+          fill="#929BB5"
           font-family="Arial,sans-serif"
-          font-size="11">CURRENT STREAK</text>
-    <text x="762" y="174" fill="#34D399"
+          font-size="11">
+      CURRENT STREAK
+    </text>
+
+    <text x="762" y="174"
+          fill="#34D399"
           font-family="Arial,sans-serif"
-          font-size="23" font-weight="bold">
-      0 days
+          font-size="23"
+          font-weight="bold">
+      1 days
     </text>
     
 
-<text x="40" y="250" fill="#FFFFFF"
+<text x="40" y="250"
+      fill="#FFFFFF"
       font-family="Arial,sans-serif"
-      font-size="17" font-weight="bold">
+      font-size="17"
+      font-weight="bold">
   WEEKLY ACTIVITY
 </text>
-<text x="40" y="272" fill="#858DA5"
-      font-family="Arial,sans-serif" font-size="11">
+
+<text x="40" y="272"
+      fill="#858DA5"
+      font-family="Arial,sans-serif"
+      font-size="11">
   Coding time per day
 </text>
 
 
-    <rect x="55" y="310" width="42"
-          height="190" rx="8"
+    <rect x="55" y="310"
+          width="42"
+          height="190"
+          rx="8"
           fill="#20243A"/>
-    <rect x="55" y="497.0" width="42"
-          height="3.0" rx="8"
+
+    <rect x="55" y="497.0"
+          width="42"
+          height="3.0"
+          rx="8"
           fill="url(#cyan)"/>
-    <text x="76" y="525" fill="#A5ADC3"
+
+    <text x="76" y="525"
+          fill="#A5ADC3"
           text-anchor="middle"
           font-family="Arial,sans-serif"
-          font-size="11">Wed</text>
-    <text x="76" y="487.0"
-          fill="#FFFFFF" text-anchor="middle"
-          font-family="Arial,sans-serif"
-          font-size="9">0m</text>
-    
+          font-size="11">
+      Wed
+    </text>
 
-    <rect x="133" y="310" width="42"
-          height="190" rx="8"
-          fill="#20243A"/>
-    <rect x="133" y="497.0" width="42"
-          height="3.0" rx="8"
-          fill="url(#cyan)"/>
-    <text x="154" y="525" fill="#A5ADC3"
+    <text x="76"
+          y="487.0"
+          fill="#FFFFFF"
           text-anchor="middle"
           font-family="Arial,sans-serif"
-          font-size="11">Thu</text>
-    <text x="154" y="487.0"
-          fill="#FFFFFF" text-anchor="middle"
-          font-family="Arial,sans-serif"
-          font-size="9">0m</text>
+          font-size="9">
+      0m
+    </text>
     
 
-    <rect x="211" y="310" width="42"
-          height="190" rx="8"
+    <rect x="133" y="310"
+          width="42"
+          height="190"
+          rx="8"
           fill="#20243A"/>
-    <rect x="211" y="497.0" width="42"
-          height="3.0" rx="8"
+
+    <rect x="133" y="497.0"
+          width="42"
+          height="3.0"
+          rx="8"
           fill="url(#cyan)"/>
-    <text x="232" y="525" fill="#A5ADC3"
+
+    <text x="154" y="525"
+          fill="#A5ADC3"
           text-anchor="middle"
           font-family="Arial,sans-serif"
-          font-size="11">Fri</text>
-    <text x="232" y="487.0"
-          fill="#FFFFFF" text-anchor="middle"
-          font-family="Arial,sans-serif"
-          font-size="9">0m</text>
-    
+          font-size="11">
+      Thu
+    </text>
 
-    <rect x="289" y="310" width="42"
-          height="190" rx="8"
-          fill="#20243A"/>
-    <rect x="289" y="310.0" width="42"
-          height="190.0" rx="8"
-          fill="url(#cyan)"/>
-    <text x="310" y="525" fill="#A5ADC3"
+    <text x="154"
+          y="487.0"
+          fill="#FFFFFF"
           text-anchor="middle"
           font-family="Arial,sans-serif"
-          font-size="11">Sat</text>
-    <text x="310" y="300.0"
-          fill="#FFFFFF" text-anchor="middle"
-          font-family="Arial,sans-serif"
-          font-size="9">15m</text>
+          font-size="9">
+      0m
+    </text>
     
 
-    <rect x="367" y="310" width="42"
-          height="190" rx="8"
+    <rect x="211" y="310"
+          width="42"
+          height="190"
+          rx="8"
           fill="#20243A"/>
-    <rect x="367" y="497.0" width="42"
-          height="3.0" rx="8"
+
+    <rect x="211" y="497.0"
+          width="42"
+          height="3.0"
+          rx="8"
           fill="url(#cyan)"/>
-    <text x="388" y="525" fill="#A5ADC3"
+
+    <text x="232" y="525"
+          fill="#A5ADC3"
           text-anchor="middle"
           font-family="Arial,sans-serif"
-          font-size="11">Sun</text>
-    <text x="388" y="487.0"
-          fill="#FFFFFF" text-anchor="middle"
-          font-family="Arial,sans-serif"
-          font-size="9">0m</text>
-    
+          font-size="11">
+      Fri
+    </text>
 
-    <rect x="445" y="310" width="42"
-          height="190" rx="8"
-          fill="#20243A"/>
-    <rect x="445" y="497.0" width="42"
-          height="3.0" rx="8"
-          fill="url(#cyan)"/>
-    <text x="466" y="525" fill="#A5ADC3"
+    <text x="232"
+          y="487.0"
+          fill="#FFFFFF"
           text-anchor="middle"
           font-family="Arial,sans-serif"
-          font-size="11">Mon</text>
-    <text x="466" y="487.0"
-          fill="#FFFFFF" text-anchor="middle"
-          font-family="Arial,sans-serif"
-          font-size="9">0m</text>
+          font-size="9">
+      0m
+    </text>
     
 
-    <rect x="523" y="310" width="42"
-          height="190" rx="8"
+    <rect x="289" y="310"
+          width="42"
+          height="190"
+          rx="8"
           fill="#20243A"/>
-    <rect x="523" y="497.0" width="42"
-          height="3.0" rx="8"
+
+    <rect x="289" y="423.6"
+          width="42"
+          height="76.4"
+          rx="8"
           fill="url(#cyan)"/>
-    <text x="544" y="525" fill="#A5ADC3"
+
+    <text x="310" y="525"
+          fill="#A5ADC3"
           text-anchor="middle"
           font-family="Arial,sans-serif"
-          font-size="11">Tue</text>
-    <text x="544" y="487.0"
-          fill="#FFFFFF" text-anchor="middle"
+          font-size="11">
+      Sat
+    </text>
+
+    <text x="310"
+          y="413.6"
+          fill="#FFFFFF"
+          text-anchor="middle"
           font-family="Arial,sans-serif"
-          font-size="9">0m</text>
+          font-size="9">
+      15m
+    </text>
     
 
-<text x="690" y="250" fill="#FFFFFF"
+    <rect x="367" y="310"
+          width="42"
+          height="190"
+          rx="8"
+          fill="#20243A"/>
+
+    <rect x="367" y="497.0"
+          width="42"
+          height="3.0"
+          rx="8"
+          fill="url(#cyan)"/>
+
+    <text x="388" y="525"
+          fill="#A5ADC3"
+          text-anchor="middle"
+          font-family="Arial,sans-serif"
+          font-size="11">
+      Sun
+    </text>
+
+    <text x="388"
+          y="487.0"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          font-family="Arial,sans-serif"
+          font-size="9">
+      0m
+    </text>
+    
+
+    <rect x="445" y="310"
+          width="42"
+          height="190"
+          rx="8"
+          fill="#20243A"/>
+
+    <rect x="445" y="497.0"
+          width="42"
+          height="3.0"
+          rx="8"
+          fill="url(#cyan)"/>
+
+    <text x="466" y="525"
+          fill="#A5ADC3"
+          text-anchor="middle"
+          font-family="Arial,sans-serif"
+          font-size="11">
+      Mon
+    </text>
+
+    <text x="466"
+          y="487.0"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          font-family="Arial,sans-serif"
+          font-size="9">
+      0m
+    </text>
+    
+
+    <rect x="523" y="310"
+          width="42"
+          height="190"
+          rx="8"
+          fill="#20243A"/>
+
+    <rect x="523" y="310.0"
+          width="42"
+          height="190.0"
+          rx="8"
+          fill="url(#cyan)"/>
+
+    <text x="544" y="525"
+          fill="#A5ADC3"
+          text-anchor="middle"
+          font-family="Arial,sans-serif"
+          font-size="11">
+      Tue
+    </text>
+
+    <text x="544"
+          y="300.0"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          font-family="Arial,sans-serif"
+          font-size="9">
+      38m
+    </text>
+    
+
+<text x="690" y="250"
+      fill="#FFFFFF"
       font-family="Arial,sans-serif"
-      font-size="17" font-weight="bold">
+      font-size="17"
+      font-weight="bold">
   LANGUAGE DISTRIBUTION
 </text>
 
 
-        <circle cx="790" cy="385" r="75"
-                fill="none" stroke="#00E5FF"
+        <circle cx="790" cy="385"
+                r="75"
+                fill="none"
+                stroke="#00E5FF"
                 stroke-width="20"
-                stroke-dasharray="336.66 134.58"
+                stroke-dasharray="321.41 149.83"
                 stroke-dashoffset="0.00"
                 transform="rotate(-90 790 385)"/>
         
 
-        <circle cx="900" cy="316" r="5"
+        <circle cx="900"
+                cy="316"
+                r="5"
                 fill="#00E5FF"/>
-        <text x="913" y="320"
+
+        <text x="913"
+              y="320"
+              fill="#DCE3F5"
+              font-family="Arial,sans-serif"
+              font-size="12">
+          Python
+        </text>
+
+        <text x="970"
+              y="320"
+              fill="#8F9AB5"
+              text-anchor="end"
+              font-family="Arial,sans-serif"
+              font-size="11">
+          68.2%
+        </text>
+        
+
+        <circle cx="790" cy="385"
+                r="75"
+                fill="none"
+                stroke="#A78BFA"
+                stroke-width="20"
+                stroke-dasharray="105.45 365.79"
+                stroke-dashoffset="-321.41"
+                transform="rotate(-90 790 385)"/>
+        
+
+        <circle cx="900"
+                cy="353"
+                r="5"
+                fill="#A78BFA"/>
+
+        <text x="913"
+              y="357"
               fill="#DCE3F5"
               font-family="Arial,sans-serif"
               font-size="12">
           Java
         </text>
-        <text x="970" y="320"
+
+        <text x="970"
+              y="357"
               fill="#8F9AB5"
               text-anchor="end"
               font-family="Arial,sans-serif"
               font-size="11">
-          71.4%
+          22.4%
         </text>
         
 
-        <circle cx="790" cy="385" r="75"
-                fill="none" stroke="#A78BFA"
+        <circle cx="790" cy="385"
+                r="75"
+                fill="none"
+                stroke="#F472B6"
                 stroke-width="20"
-                stroke-dasharray="134.58 336.66"
-                stroke-dashoffset="-336.66"
+                stroke-dasharray="38.60 432.64"
+                stroke-dashoffset="-426.86"
                 transform="rotate(-90 790 385)"/>
         
 
-        <circle cx="900" cy="353" r="5"
-                fill="#A78BFA"/>
-        <text x="913" y="357"
+        <circle cx="900"
+                cy="390"
+                r="5"
+                fill="#F472B6"/>
+
+        <text x="913"
+              y="394"
               fill="#DCE3F5"
               font-family="Arial,sans-serif"
               font-size="12">
           PowerShell
         </text>
-        <text x="970" y="357"
+
+        <text x="970"
+              y="394"
               fill="#8F9AB5"
               text-anchor="end"
               font-family="Arial,sans-serif"
               font-size="11">
-          28.6%
+          8.2%
         </text>
         
 
-    <text x="790" y="383" fill="#FFFFFF"
+        <circle cx="790" cy="385"
+                r="75"
+                fill="none"
+                stroke="#34D399"
+                stroke-width="20"
+                stroke-dasharray="5.55 465.68"
+                stroke-dashoffset="-465.46"
+                transform="rotate(-90 790 385)"/>
+        
+
+        <circle cx="900"
+                cy="427"
+                r="5"
+                fill="#34D399"/>
+
+        <text x="913"
+              y="431"
+              fill="#DCE3F5"
+              font-family="Arial,sans-serif"
+              font-size="12">
+          Other
+        </text>
+
+        <text x="970"
+              y="431"
+              fill="#8F9AB5"
+              text-anchor="end"
+              font-family="Arial,sans-serif"
+              font-size="11">
+          1.2%
+        </text>
+        
+
+        <circle cx="790" cy="385"
+                r="75"
+                fill="none"
+                stroke="#FBBF24"
+                stroke-width="20"
+                stroke-dasharray="0.22 471.01"
+                stroke-dashoffset="-471.01"
+                transform="rotate(-90 790 385)"/>
+        
+
+        <circle cx="900"
+                cy="464"
+                r="5"
+                fill="#FBBF24"/>
+
+        <text x="913"
+              y="468"
+              fill="#DCE3F5"
+              font-family="Arial,sans-serif"
+              font-size="12">
+          JSON
+        </text>
+
+        <text x="970"
+              y="468"
+              fill="#8F9AB5"
+              text-anchor="end"
+              font-family="Arial,sans-serif"
+              font-size="11">
+          0.0%
+        </text>
+        
+
+    <text x="790" y="383"
+          fill="#FFFFFF"
           text-anchor="middle"
           font-family="Arial,sans-serif"
-          font-size="19" font-weight="bold">
-      2
+          font-size="19"
+          font-weight="bold">
+      5
     </text>
-    <text x="790" y="402" fill="#8F9AB5"
+
+    <text x="790" y="402"
+          fill="#8F9AB5"
           text-anchor="middle"
           font-family="Arial,sans-serif"
-          font-size="10">LANGUAGES</text>
+          font-size="10">
+      LANGUAGES
+    </text>
     
 
-<line x1="35" y1="565" x2="965" y2="565"
+<line x1="35" y1="565"
+      x2="965" y2="565"
       stroke="#34305A"/>
-<text x="40" y="590" fill="#8B91A8"
+
+<text x="40" y="590"
+      fill="#8B91A8"
       font-family="Arial,sans-serif"
       font-size="11">
-  04 Nov 2026 — 10 Nov 2026  |  TOP LANGUAGE: Java
+  04 Nov 2026 — 10 Nov 2026 |
+  TOP LANGUAGE: Python
 </text>
-<text x="960" y="590" fill="#00E5FF"
+
+<text x="960" y="590"
+      fill="#00E5FF"
       text-anchor="end"
       font-family="Arial,sans-serif"
       font-size="11">
   POWERED BY WAKATIME
 </text>
+
 </svg>
