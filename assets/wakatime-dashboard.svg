@@ -118,7 +118,7 @@
     <text x="76" y="525" fill="#A5ADC3"
           text-anchor="middle"
           font-family="Arial,sans-serif"
-          font-size="11">Tue</text>
+          font-size="11">Wed</text>
     <text x="76" y="487.0"
           fill="#FFFFFF" text-anchor="middle"
           font-family="Arial,sans-serif"
@@ -134,7 +134,7 @@
     <text x="154" y="525" fill="#A5ADC3"
           text-anchor="middle"
           font-family="Arial,sans-serif"
-          font-size="11">Wed</text>
+          font-size="11">Thu</text>
     <text x="154" y="487.0"
           fill="#FFFFFF" text-anchor="middle"
           font-family="Arial,sans-serif"
@@ -150,7 +150,7 @@
     <text x="232" y="525" fill="#A5ADC3"
           text-anchor="middle"
           font-family="Arial,sans-serif"
-          font-size="11">Thu</text>
+          font-size="11">Fri</text>
     <text x="232" y="487.0"
           fill="#FFFFFF" text-anchor="middle"
           font-family="Arial,sans-serif"
@@ -160,33 +160,33 @@
     <rect x="289" y="310" width="42"
           height="190" rx="8"
           fill="#20243A"/>
-    <rect x="289" y="497.0" width="42"
-          height="3.0" rx="8"
+    <rect x="289" y="310.0" width="42"
+          height="190.0" rx="8"
           fill="url(#cyan)"/>
     <text x="310" y="525" fill="#A5ADC3"
           text-anchor="middle"
           font-family="Arial,sans-serif"
-          font-size="11">Fri</text>
-    <text x="310" y="487.0"
+          font-size="11">Sat</text>
+    <text x="310" y="300.0"
           fill="#FFFFFF" text-anchor="middle"
           font-family="Arial,sans-serif"
-          font-size="9">0m</text>
+          font-size="9">15m</text>
     
 
     <rect x="367" y="310" width="42"
           height="190" rx="8"
           fill="#20243A"/>
-    <rect x="367" y="310.0" width="42"
-          height="190.0" rx="8"
+    <rect x="367" y="497.0" width="42"
+          height="3.0" rx="8"
           fill="url(#cyan)"/>
     <text x="388" y="525" fill="#A5ADC3"
           text-anchor="middle"
           font-family="Arial,sans-serif"
-          font-size="11">Sat</text>
-    <text x="388" y="300.0"
+          font-size="11">Sun</text>
+    <text x="388" y="487.0"
           fill="#FFFFFF" text-anchor="middle"
           font-family="Arial,sans-serif"
-          font-size="9">15m</text>
+          font-size="9">0m</text>
     
 
     <rect x="445" y="310" width="42"
@@ -198,7 +198,7 @@
     <text x="466" y="525" fill="#A5ADC3"
           text-anchor="middle"
           font-family="Arial,sans-serif"
-          font-size="11">Sun</text>
+          font-size="11">Mon</text>
     <text x="466" y="487.0"
           fill="#FFFFFF" text-anchor="middle"
           font-family="Arial,sans-serif"
@@ -214,7 +214,7 @@
     <text x="544" y="525" fill="#A5ADC3"
           text-anchor="middle"
           font-family="Arial,sans-serif"
-          font-size="11">Mon</text>
+          font-size="11">Tue</text>
     <text x="544" y="487.0"
           fill="#FFFFFF" text-anchor="middle"
           font-family="Arial,sans-serif"
@@ -295,7 +295,7 @@
 <text x="40" y="590" fill="#8B91A8"
       font-family="Arial,sans-serif"
       font-size="11">
-  03 Nov 2026 — 09 Nov 2026  |  TOP LANGUAGE: Java
+  04 Nov 2026 — 10 Nov 2026  |  TOP LANGUAGE: Java
 </text>
 <text x="960" y="590" fill="#00E5FF"
       text-anchor="end"
