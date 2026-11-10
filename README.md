@@ -1,7 +1,7 @@
- 
+
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050816,40:6C63FF,100:00E5FF&height=230&section=header&text=SURYA%20SHEKHAR%20BOSE&fontSize=38&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=FULL%20STACK%20DEVELOPER%20%7C%20JAVA%20ENTHUSIAST%20%7C%20TECH%20EXPLORER&descSize=13&descAlignY=57&descColor=00E5FF" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050816,40:6C63FF,100:00E5FF&height=240&section=header&text=SURYA%20SHEKHAR%20BOSE&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=FULL%20STACK%20DEVELOPER%20%7C%20JAVA%20ENTHUSIAST%20%7C%20TECH%20EXPLORER&descSize=13&descAlignY=58&descColor=00E5FF" width="100%" />
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&pause=1000&color=00E5FF&center=true&vCenter=true&width=750&lines=Full+Stack+Developer;Java+%7C+Spring+Boot+Enthusiast;Hackathon+Winner;Building+Ideas+Into+Reality;Always+Learning+Something+New!" alt="Typing SVG" />
 
@@ -11,11 +11,21 @@
 <img src="https://img.shields.io/badge/FOCUS-FULL%20STACK-8A2BE2?style=for-the-badge&logo=codeforces&logoColor=white" />
 <img src="https://img.shields.io/badge/MINDSET-ALWAYS%20BUILDING-00D68F?style=for-the-badge&logo=rocket&logoColor=white" />
 
+<br/><br/>
+
+<img src="https://komarev.com/ghpvc/?username=suryadev111&label=PROFILE%20VISITORS&color=00E5FF&style=flat-square" />
+
 </div>
 
 ---
 
-## ◈ 01 — SYSTEM PROFILE
+<div align="center">
+
+# ◈ 01 — SYSTEM PROFILE
+
+<sub>IDENTITY • OBJECTIVES • DEVELOPER OVERVIEW</sub>
+
+</div>
 
 <table>
 <tr>
@@ -28,13 +38,16 @@ Name: Surya Shekhar Bose
 Role: Full Stack Developer
 Education: B.Tech Information Technology
 Achievement: 1x Hackathon Winner
+
 Currently_Learning:
   - Java
   - Spring Boot
   - Full Stack Development
+
 Currently_Building:
   - Hackathon Sim
   - Personal Projects
+
 Interests:
   - Programming
   - Technology
@@ -42,17 +55,17 @@ Interests:
   - Innovation
 ```
 
-- 🎓 B.Tech Information Technology student
-- 💻 Learning **Java, Spring Boot, and Full Stack Development**
-- 🚀 Building **Hackathon Sim** and other projects
-- 🏆 1× Hackathon Winner
-- 🌱 Always exploring new technologies
-- 🎮 Gamer when I'm not coding
+- 🎓 B.Tech Information Technology student.
+- 💻 Exploring Java, Spring Boot and Full Stack Development.
+- 🚀 Building Hackathon Sim and personal projects.
+- 🏆 1× Hackathon Winner.
+- 🌱 Always exploring new technologies.
+- 🎮 Gamer when I'm not coding.
 
 </td>
 <td width="40%" align="center" valign="middle">
 
-<img src="https://skillicons.dev/icons?i=java,python,js,react,spring&perline=3" width="100%" />
+<img src="https://skillicons.dev/icons?i=java,python,js,react,spring&perline=3&theme=dark" width="100%" />
 
 <br/><br/>
 
@@ -60,41 +73,70 @@ Interests:
 
 <sub>Turning caffeine into code.</sub>
 
+<br/><br/>
+
+<img src="https://img.shields.io/badge/DEVELOPER_MODE-ACTIVE-00E5FF?style=flat-square" />
+
 </td>
 </tr>
 </table>
 
 ---
 
-## ◈ 02 — TECHNOLOGY ARSENAL
-
 <div align="center">
+
+# ◈ 02 — TECHNOLOGY ARSENAL
+
+<sub>TOOLS • LANGUAGES • FRAMEWORKS • PLATFORMS</sub>
+
+</div>
+
+<table>
+<tr>
+<td width="50%" align="center" valign="top">
 
 ### ⚡ Programming Languages
 
 <img src="https://skillicons.dev/icons?i=java,python,c,js&theme=dark" />
 
+</td>
+<td width="50%" align="center" valign="top">
+
 ### 🎨 Frontend Development
 
 <img src="https://skillicons.dev/icons?i=html,css,react,tailwind&theme=dark" />
+
+</td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top">
 
 ### ⚙️ Backend & Database
 
 <img src="https://skillicons.dev/icons?i=spring,nodejs,flask,django,mysql,mongodb,postgres&theme=dark" />
 
+</td>
+<td width="50%" align="center" valign="top">
+
 ### 🛠️ Tools & Platforms
 
 <img src="https://skillicons.dev/icons?i=git,github,docker,azure,firebase,figma,arduino&theme=dark" />
 
-</div>
+</td>
+</tr>
+</table>
 
 ---
 
-## ◈ 03 — GITHUB PERFORMANCE
-
 <div align="center">
 
-<img height="180" src="https://github-readme-stats-eight-theta.vercel.app/api?username=suryadev111&cache_seconds=7200&layout=compact&theme=radical&border_radius=10" />
+# ◈ 03 — GITHUB PERFORMANCE
+
+<sub>MY DEVELOPMENT STATISTICS</sub>
+
+<br/><br/>
+
+<img height="180" src="https://github-readme-stats-eight-theta.vercel.app/api?username=suryadev111&cache_seconds=7200&layout=compact&theme=radical&border_radius=12" />
 
 <img height="180" src="https://streak-stats.demolab.com/?user=suryadev111&theme=radical&hide_border=true&cache_seconds=86400" />
 
@@ -102,9 +144,13 @@ Interests:
 
 ---
 
-## ◈ 04 — ACHIEVEMENTS UNLOCKED
-
 <div align="center">
+
+# ◈ 04 — ACHIEVEMENTS UNLOCKED
+
+<sub>GITHUB TROPHIES • MILESTONES • CONTRIBUTIONS</sub>
+
+<br/><br/>
 
 <img src="https://trophy.ryglcloud.net/?username=suryadev111&theme=radical&no-frame=true&no-bg=true&margin-w=4&cache_seconds=86400" width="100%" />
 
@@ -112,11 +158,13 @@ Interests:
 
 ---
 
-## ◈ 05 — CONTRIBUTION MATRIX
-
-<h3 align="center">📈 Contribution Activity</h3>
-
 <div align="center">
+
+# ◈ 05 — CONTRIBUTION MATRIX
+
+<sub>VISUAL REPRESENTATION OF MY DEVELOPMENT ACTIVITY</sub>
+
+<br/><br/>
 
 <img src="./activity-graph.svg" width="100%" alt="Contribution Activity Graph" />
 
@@ -124,108 +172,134 @@ Interests:
 
 ---
 
-## ◈ 06 — CONTRIBUTION CALENDAR
-
-<div align="center">
-  <img
-    src="https://ghchart.rshah.org/00E5FF/suryadev111"
-    width="100%"
-    alt="Dark-themed GitHub Contribution Calendar"
-  />
-</div>
-
----
-
-## ◈ 07 — CONTRIBUTION SNAKE
-
 <div align="center">
 
-### 🐍 Watch My Contributions Get Eaten!
+# ◈ 06 — CONTRIBUTION CALENDAR
 
-<img
-  src="https://raw.githubusercontent.com/suryadev111/suryadev111/output/github-contribution-grid-snake-dark.svg"
-  width="100%"
-  alt="Dark Contribution Snake Animation"
-/>
+<sub>EVERY CONTRIBUTION IS ANOTHER STEP FORWARD</sub>
+
+<br/><br/>
+
+<img src="https://ghchart.rshah.org/00E5FF/suryadev111" width="100%" alt="GitHub Contribution Calendar" />
 
 </div>
 
 ---
 
-## ◈ 08 — CODING ACTIVITY
+<div align="center">
+
+# ◈ 07 — CONTRIBUTION SNAKE
+
+<sub>WATCH MY CONTRIBUTIONS GET EATEN!</sub>
+
+<br/><br/>
+
+<img src="https://raw.githubusercontent.com/suryadev111/suryadev111/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Dark Contribution Snake Animation" />
+
+</div>
+
+---
 
 <div align="center">
 
-### ⏱️ Powered by WakaTime
+# ◈ 08 — CODING ACTIVITY
+
+<sub>REAL-TIME DEVELOPMENT INSIGHTS • POWERED BY WAKATIME</sub>
+
+<br/>
+
+<img src="https://img.shields.io/badge/POWERED_BY-WAKATIME-00E5FF?style=for-the-badge&logo=wakatime&logoColor=white" />
+
+<br/><br/>
 
 <!--START_SECTION:waka-->
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/suryadev111/suryadev111/main/assets/wakatime-dashboard.svg"
-       width="100%"
-       alt="WakaTime Coding Analytics Dashboard"/>
+  <img src="https://raw.githubusercontent.com/suryadev111/suryadev111/main/assets/wakatime-dashboard.svg" width="100%" alt="WakaTime Coding Analytics Dashboard"/>
 </div>
 
 <!--END_SECTION:waka-->
+
+<br/>
+
+<sub>Automatically updated through GitHub Actions.</sub>
 
 </div>
 
 ---
 
-## ◈ 09 — FEATURED PROJECTS
-
-## 🚀 Featured Projects
-
 <div align="center">
+
+# ◈ 09 — FEATURED PROJECTS
+
+<sub>SELECTED BUILDS • EXPERIMENTS • CREATIVE DEVELOPMENT</sub>
+
+</div>
 
 <table>
 <tr>
-<td width="50%" align="center" bgcolor="#0d1117">
+<td width="50%" align="center" valign="top">
 
 ### 🎮 Rock Paper Scissors
 
 <img src="https://placehold.co/500x180/0d1117/00f5ff?text=ROCK+PAPER+SCISSORS" width="100%" alt="Rock Paper Scissors"/>
 
-**Interactive Game Project**
+**INTERACTIVE GAME PROJECT**
 
 A fun game built with interactive gameplay.
 
-[<img src="https://img.shields.io/badge/VIEW_PROJECT-00F5FF?style=for-the-badge&logo=github&logoColor=black" />](https://github.com/suryadev111/rock_paper_scissors)
+<br/>
+
+<a href="https://github.com/suryadev111/rock_paper_scissors">
+<img src="https://img.shields.io/badge/VIEW_PROJECT-00E5FF?style=for-the-badge&logo=github&logoColor=black" />
+</a>
 
 </td>
-<td width="50%" align="center" bgcolor="#0d1117">
+<td width="50%" align="center" valign="top">
 
 ### ❌ Tic Tac Toe
 
 <img src="https://placehold.co/500x180/0d1117/00f5ff?text=TIC+TAC+TOE" width="100%" alt="Tic Tac Toe"/>
 
-**Classic Strategy Game**
+**CLASSIC STRATEGY GAME**
 
 A simple and entertaining Tic Tac Toe project.
 
-[<img src="https://img.shields.io/badge/VIEW_PROJECT-00F5FF?style=for-the-badge&logo=github&logoColor=black" />](https://github.com/suryadev111/Tic-Tac-Toe)
+<br/>
+
+<a href="https://github.com/suryadev111/Tic-Tac-Toe">
+<img src="https://img.shields.io/badge/VIEW_PROJECT-00E5FF?style=for-the-badge&logo=github&logoColor=black" />
+</a>
 
 </td>
 </tr>
 </table>
 
-<br/>
 <div align="center">
-  <a href="https://github.com/suryadev111?tab=repositories">
-    <img src="https://img.shields.io/badge/EXPLORE_ALL_PROJECTS-00F5FF?style=for-the-badge&logo=github&logoColor=white&labelColor=00F5FF" />
-  </a>
-</div>
 
+<br/>
+
+<a href="https://github.com/suryadev111?tab=repositories">
+<img src="https://img.shields.io/badge/EXPLORE_ALL_PROJECTS-8A2BE2?style=for-the-badge&logo=github&logoColor=white" />
+</a>
+
+</div>
 
 ---
 
-## ◈ 10 — MY DIGITAL UNIVERSE
-
 <div align="center">
 
-### 🌆 Welcome to My Digital World
+# ◈ 10 — MY DIGITAL UNIVERSE
+
+<sub>CREATIVITY • TECHNOLOGY • IMAGINATION</sub>
+
+<br/><br/>
 
 <img src="./3d-city.gif" width="100%" alt="Animated 3D Neon City" />
+
+<br/>
+
+**WELCOME TO MY DIGITAL WORLD**
 
 <sub>Exploring the intersection of creativity, technology and code.</sub>
 
@@ -233,11 +307,13 @@ A simple and entertaining Tic Tac Toe project.
 
 ---
 
-## ◈ 11 — ESTABLISH CONNECTION
-
 <div align="center">
 
-### 🤝 Let's Connect
+# ◈ 11 — ESTABLISH CONNECTION
+
+<sub>LET'S CONNECT • COLLABORATE • CREATE</sub>
+
+<br/><br/>
 
 <a href="https://linkedin.com/in/surya-shekhar-bose">
 <img src="https://img.shields.io/badge/LINKEDIN-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
@@ -251,13 +327,23 @@ A simple and entertaining Tic Tac Toe project.
 <img src="https://img.shields.io/badge/EMAIL-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
 
+<br/><br/>
+
+<a href="https://github.com/suryadev111">
+<img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white" />
+</a>
+
 </div>
 
 ---
 
-## ◈ 12 — PROFILE ANALYTICS
-
 <div align="center">
+
+# ◈ 12 — PROFILE ANALYTICS
+
+<sub>YOUR VISIT MAKES THIS PROFILE MORE ALIVE</sub>
+
+<br/><br/>
 
 <img src="https://komarev.com/ghpvc/?username=suryadev111&label=PROFILE%20VIEWS&color=00E5FF&style=for-the-badge" />
 
@@ -265,16 +351,20 @@ A simple and entertaining Tic Tac Toe project.
 
 ---
 
-## ◈ 13 — END OF TRANSMISSION
-
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00E5FF,50:6C63FF,100:050816&height=120&section=footer" width="100%" />
+# ◈ 13 — END OF TRANSMISSION
 
-### ✨ Thanks for visiting my profile!
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00E5FF,50:6C63FF,100:050816&height=140&section=footer" width="100%" />
 
-**Keep Coding. Keep Creating. Keep Innovating.**
+### ✨ THANKS FOR VISITING MY PROFILE!
+
+**KEEP CODING. KEEP CREATING. KEEP INNOVATING.**
 
 <sub>Designed & Built with 💙 by Surya Shekhar Bose</sub>
+
+<br/>
+
+<img src="https://img.shields.io/badge/END_OF_TRANSMISSION-00E5FF?style=for-the-badge" />
 
 </div>
