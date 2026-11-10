@@ -35,16 +35,32 @@ jobs:
           import html
           import requests
           from datetime import datetime, timedelta
+          from zoneinfo import ZoneInfo
+
+          # ==========================================
+          # 1. FETCH WAKATIME DATA
+          # ==========================================
 
           token = os.environ["WAKATIME_TOKEN"]
 
+          today = datetime.now(
+              ZoneInfo("Asia/Kolkata")
+          ).date()
+
+          start_date = today - timedelta(days=6)
+
+          params = {
+              "start": start_date.isoformat(),
+              "end": today.isoformat(),
+              "timezone": "Asia/Kolkata"
+          }
+
           response = requests.get(
               "https://wakatime.com/api/v1/users/current/summaries",
-              headers={"Authorization": f"Bearer {token}"},
-              params={
-                  "range": "Last 7 Days",
-                  "timezone": "Asia/Kolkata"
+              headers={
+                  "Authorization": f"Bearer {token}"
               },
+              params=params,
               timeout=30
           )
 
@@ -53,6 +69,10 @@ jobs:
 
           if not data:
               raise Exception("No WakaTime data returned")
+
+          # ==========================================
+          # 2. PROCESS CODING STATISTICS
+          # ==========================================
 
           daily = []
           languages = {}
@@ -65,6 +85,7 @@ jobs:
 
               for lang in day.get("languages", []):
                   name = lang["name"]
+
                   languages[name] = (
                       languages.get(name, 0)
                       + lang["total_seconds"]
@@ -72,45 +93,76 @@ jobs:
 
           daily.sort(key=lambda x: x[0])
 
-          total = sum(seconds for _, seconds in daily)
-          average = total / len(daily)
+          total = sum(
+              seconds for _, seconds in daily
+          )
+
+          average = total / 7
 
           def duration(seconds):
               seconds = int(round(seconds))
+
               hours, remainder = divmod(seconds, 3600)
               minutes, seconds = divmod(remainder, 60)
 
               parts = []
+
               if hours:
                   parts.append(f"{hours}h")
+
               if minutes:
                   parts.append(f"{minutes}m")
+
               if seconds or not parts:
                   parts.append(f"{seconds}s")
 
               return " ".join(parts)
 
-          most_active = max(daily, key=lambda x: x[1])
+          # ==========================================
+          # 3. MOST ACTIVE DAY
+          # ==========================================
+
+          most_active = max(
+              daily,
+              key=lambda x: x[1]
+          )
+
           active_day = datetime.strptime(
-              most_active[0], "%Y-%m-%d"
+              most_active[0],
+              "%Y-%m-%d"
           ).strftime("%a, %d %b")
 
-          # Calculate consecutive active days ending on the latest date
+          # ==========================================
+          # 4. CODING STREAK
+          # ==========================================
+
           active_dates = {
-              datetime.strptime(date, "%Y-%m-%d").date()
-              for date, seconds in daily if seconds > 0
+              datetime.strptime(
+                  date,
+                  "%Y-%m-%d"
+              ).date()
+
+              for date, seconds in daily
+              if seconds > 0
           }
 
-          latest_date = datetime.strptime(
-              daily[-1][0], "%Y-%m-%d"
-          ).date()
+          # If no coding today, allow a streak
+          # that continued through yesterday.
+
+          check_date = today
+
+          if check_date not in active_dates:
+              check_date -= timedelta(days=1)
 
           streak = 0
-          check_date = latest_date
 
           while check_date in active_dates:
               streak += 1
               check_date -= timedelta(days=1)
+
+          # ==========================================
+          # 5. TOP PROGRAMMING LANGUAGES
+          # ==========================================
 
           top_languages = sorted(
               languages.items(),
@@ -119,93 +171,167 @@ jobs:
           )[:6]
 
           top_language = (
-              top_languages[0][0] if top_languages else "No data"
+              top_languages[0][0]
+              if top_languages
+              else "No data"
           )
 
-          # Build SVG dashboard
+          # ==========================================
+          # 6. BUILD SVG DASHBOARD
+          # ==========================================
+
           svg = []
 
           svg.append("""
           <svg xmlns="http://www.w3.org/2000/svg"
                width="1000" height="620"
                viewBox="0 0 1000 620">
+
           <defs>
-            <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+
+            <linearGradient id="bg"
+                            x1="0" y1="0"
+                            x2="1" y2="1">
               <stop offset="0%" stop-color="#090D1A"/>
               <stop offset="100%" stop-color="#17102D"/>
             </linearGradient>
-            <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="0">
+
+            <linearGradient id="cyan"
+                            x1="0" y1="0"
+                            x2="1" y2="0">
               <stop offset="0%" stop-color="#00E5FF"/>
               <stop offset="100%" stop-color="#7B61FF"/>
             </linearGradient>
-            <linearGradient id="purple" x1="0" y1="0" x2="1" y2="0">
+
+            <linearGradient id="purple"
+                            x1="0" y1="0"
+                            x2="1" y2="0">
               <stop offset="0%" stop-color="#8B5CF6"/>
               <stop offset="100%" stop-color="#EC4899"/>
             </linearGradient>
+
             <filter id="glow">
-              <feGaussianBlur stdDeviation="4" result="blur"/>
+              <feGaussianBlur stdDeviation="4"
+                              result="blur"/>
               <feMerge>
                 <feMergeNode in="blur"/>
                 <feMergeNode in="SourceGraphic"/>
               </feMerge>
             </filter>
+
           </defs>
 
-          <rect width="1000" height="620" rx="24" fill="url(#bg)"/>
-          <rect x="1" y="1" width="998" height="618" rx="23"
-                fill="none" stroke="#34305A" stroke-width="2"/>
+          <rect width="1000" height="620"
+                rx="24" fill="url(#bg)"/>
 
-          <text x="40" y="52" fill="#FFFFFF"
+          <rect x="1" y="1"
+                width="998" height="618"
+                rx="23"
+                fill="none"
+                stroke="#34305A"
+                stroke-width="2"/>
+
+          <text x="40" y="52"
+                fill="#FFFFFF"
                 font-family="Arial,sans-serif"
-                font-size="25" font-weight="bold">
+                font-size="25"
+                font-weight="bold">
             CODING ANALYTICS
           </text>
-          <text x="42" y="78" fill="#8B91A8"
-                font-family="Arial,sans-serif" font-size="12">
+
+          <text x="42" y="78"
+                fill="#8B91A8"
+                font-family="Arial,sans-serif"
+                font-size="12">
             WAKATIME DEVELOPER DASHBOARD
           </text>
-          <circle cx="950" cy="43" r="6" fill="#00E5A8"
+
+          <circle cx="950" cy="43"
+                  r="6"
+                  fill="#00E5A8"
                   filter="url(#glow)"/>
-          <text x="935" y="65" fill="#00E5A8"
+
+          <text x="935" y="65"
+                fill="#00E5A8"
                 text-anchor="end"
-                font-family="Arial,sans-serif" font-size="11">
+                font-family="Arial,sans-serif"
+                font-size="11">
             TRACKING ACTIVE
           </text>
+
           """)
 
-          # Metric cards
+          # ==========================================
+          # 7. METRIC CARDS
+          # ==========================================
+
           cards = [
-              ("WEEKLY CODING", duration(total), "#00E5FF"),
-              ("DAILY AVERAGE", duration(average), "#A78BFA"),
-              ("MOST ACTIVE DAY", active_day, "#F472B6"),
-              ("CURRENT STREAK", f"{streak} days", "#34D399")
+              (
+                  "WEEKLY CODING",
+                  duration(total),
+                  "#00E5FF"
+              ),
+              (
+                  "DAILY AVERAGE",
+                  duration(average),
+                  "#A78BFA"
+              ),
+              (
+                  "MOST ACTIVE DAY",
+                  active_day,
+                  "#F472B6"
+              ),
+              (
+                  "CURRENT STREAK",
+                  f"{streak} days",
+                  "#34D399"
+              )
           ]
 
           for i, (label, value, color) in enumerate(cards):
+
               x = 35 + i * 237
+
               svg.append(f"""
-              <rect x="{x}" y="105" width="220" height="100"
-                    rx="14" fill="#151A2D"
+              <rect x="{x}" y="105"
+                    width="220" height="100"
+                    rx="14"
+                    fill="#151A2D"
                     stroke="#34305A"/>
-              <text x="{x+16}" y="133" fill="#929BB5"
+
+              <text x="{x+16}" y="133"
+                    fill="#929BB5"
                     font-family="Arial,sans-serif"
-                    font-size="11">{label}</text>
-              <text x="{x+16}" y="174" fill="{color}"
+                    font-size="11">
+                {label}
+              </text>
+
+              <text x="{x+16}" y="174"
+                    fill="{color}"
                     font-family="Arial,sans-serif"
-                    font-size="23" font-weight="bold">
+                    font-size="23"
+                    font-weight="bold">
                 {html.escape(value)}
               </text>
               """)
 
-          # Daily activity chart
+          # ==========================================
+          # 8. WEEKLY ACTIVITY GRAPH
+          # ==========================================
+
           svg.append("""
-          <text x="40" y="250" fill="#FFFFFF"
+          <text x="40" y="250"
+                fill="#FFFFFF"
                 font-family="Arial,sans-serif"
-                font-size="17" font-weight="bold">
+                font-size="17"
+                font-weight="bold">
             WEEKLY ACTIVITY
           </text>
-          <text x="40" y="272" fill="#858DA5"
-                font-family="Arial,sans-serif" font-size="11">
+
+          <text x="40" y="272"
+                fill="#858DA5"
+                font-family="Arial,sans-serif"
+                font-size="11">
             Coding time per day
           </text>
           """)
@@ -213,88 +339,133 @@ jobs:
           chart_x = 55
           chart_y = 310
           chart_height = 190
-          chart_width = 560
+
           max_seconds = max(
               [seconds for _, seconds in daily] + [1]
           )
 
           for i, (date, seconds) in enumerate(daily):
+
               x = chart_x + i * 78
+
               bar_height = max(
-                  3, (seconds / max_seconds) * chart_height
+                  3,
+                  (seconds / max_seconds) * chart_height
               )
+
               y = chart_y + chart_height - bar_height
 
               day_label = datetime.strptime(
-                  date, "%Y-%m-%d"
+                  date,
+                  "%Y-%m-%d"
               ).strftime("%a")
 
               svg.append(f"""
-              <rect x="{x}" y="{chart_y}" width="42"
-                    height="{chart_height}" rx="8"
+              <rect x="{x}" y="{chart_y}"
+                    width="42"
+                    height="{chart_height}"
+                    rx="8"
                     fill="#20243A"/>
-              <rect x="{x}" y="{y:.1f}" width="42"
-                    height="{bar_height:.1f}" rx="8"
+
+              <rect x="{x}" y="{y:.1f}"
+                    width="42"
+                    height="{bar_height:.1f}"
+                    rx="8"
                     fill="url(#cyan)"/>
-              <text x="{x+21}" y="525" fill="#A5ADC3"
+
+              <text x="{x+21}" y="525"
+                    fill="#A5ADC3"
                     text-anchor="middle"
                     font-family="Arial,sans-serif"
-                    font-size="11">{day_label}</text>
-              <text x="{x+21}" y="{max(300, y-10):.1f}"
-                    fill="#FFFFFF" text-anchor="middle"
+                    font-size="11">
+                {day_label}
+              </text>
+
+              <text x="{x+21}"
+                    y="{max(300, y-10):.1f}"
+                    fill="#FFFFFF"
+                    text-anchor="middle"
                     font-family="Arial,sans-serif"
-                    font-size="9">{round(seconds/60)}m</text>
+                    font-size="9">
+                {round(seconds/60)}m
+              </text>
               """)
 
-          # Language distribution donut chart
+          # ==========================================
+          # 9. LANGUAGE DISTRIBUTION DONUT CHART
+          # ==========================================
+
           svg.append("""
-          <text x="690" y="250" fill="#FFFFFF"
+          <text x="690" y="250"
+                fill="#FFFFFF"
                 font-family="Arial,sans-serif"
-                font-size="17" font-weight="bold">
+                font-size="17"
+                font-weight="bold">
             LANGUAGE DISTRIBUTION
           </text>
           """)
 
           cx, cy, radius = 790, 385, 75
+
           circumference = 2 * math.pi * radius
           offset = 0
 
           colors = [
-              "#00E5FF", "#A78BFA", "#F472B6",
-              "#34D399", "#FBBF24", "#60A5FA"
+              "#00E5FF",
+              "#A78BFA",
+              "#F472B6",
+              "#34D399",
+              "#FBBF24",
+              "#60A5FA"
           ]
 
           if top_languages:
+
+              language_total = sum(languages.values())
+
               for i, (name, seconds) in enumerate(top_languages):
+
                   fraction = seconds / max(
-                      sum(languages.values()), 1
+                      language_total,
+                      1
                   )
+
                   segment = fraction * circumference
+
                   color = colors[i % len(colors)]
 
                   svg.append(f"""
-                  <circle cx="{cx}" cy="{cy}" r="{radius}"
-                          fill="none" stroke="{color}"
+                  <circle cx="{cx}" cy="{cy}"
+                          r="{radius}"
+                          fill="none"
+                          stroke="{color}"
                           stroke-width="20"
                           stroke-dasharray="{segment:.2f} {circumference-segment:.2f}"
                           stroke-dashoffset="{-offset:.2f}"
                           transform="rotate(-90 {cx} {cy})"/>
                   """)
+
                   offset += segment
 
                   percent = fraction * 100
                   legend_y = 320 + i * 37
 
                   svg.append(f"""
-                  <circle cx="900" cy="{legend_y-4}" r="5"
+                  <circle cx="900"
+                          cy="{legend_y-4}"
+                          r="5"
                           fill="{color}"/>
-                  <text x="913" y="{legend_y}"
+
+                  <text x="913"
+                        y="{legend_y}"
                         fill="#DCE3F5"
                         font-family="Arial,sans-serif"
                         font-size="12">
                     {html.escape(name)}
                   </text>
-                  <text x="970" y="{legend_y}"
+
+                  <text x="970"
+                        y="{legend_y}"
                         fill="#8F9AB5"
                         text-anchor="end"
                         font-family="Arial,sans-serif"
@@ -304,53 +475,83 @@ jobs:
                   """)
 
               svg.append(f"""
-              <text x="{cx}" y="{cy-2}" fill="#FFFFFF"
+              <text x="{cx}" y="{cy-2}"
+                    fill="#FFFFFF"
                     text-anchor="middle"
                     font-family="Arial,sans-serif"
-                    font-size="19" font-weight="bold">
+                    font-size="19"
+                    font-weight="bold">
                 {len(languages)}
               </text>
-              <text x="{cx}" y="{cy+17}" fill="#8F9AB5"
+
+              <text x="{cx}" y="{cy+17}"
+                    fill="#8F9AB5"
                     text-anchor="middle"
                     font-family="Arial,sans-serif"
-                    font-size="10">LANGUAGES</text>
-              """)
-          else:
-              svg.append(f"""
-              <circle cx="{cx}" cy="{cy}" r="{radius}"
-                      fill="none" stroke="#343A52"
-                      stroke-width="20"/>
-              <text x="{cx}" y="{cy+5}" fill="#8F9AB5"
-                    text-anchor="middle"
-                    font-family="Arial,sans-serif"
-                    font-size="12">NO DATA</text>
+                    font-size="10">
+                LANGUAGES
+              </text>
               """)
 
-          # Footer
+          else:
+
+              svg.append(f"""
+              <circle cx="{cx}" cy="{cy}"
+                      r="{radius}"
+                      fill="none"
+                      stroke="#343A52"
+                      stroke-width="20"/>
+
+              <text x="{cx}" y="{cy+5}"
+                    fill="#8F9AB5"
+                    text-anchor="middle"
+                    font-family="Arial,sans-serif"
+                    font-size="12">
+                NO DATA
+              </text>
+              """)
+
+          # ==========================================
+          # 10. DASHBOARD FOOTER
+          # ==========================================
+
           start = datetime.strptime(
-              daily[0][0], "%Y-%m-%d"
+              daily[0][0],
+              "%Y-%m-%d"
           ).strftime("%d %b %Y")
 
           end = datetime.strptime(
-              daily[-1][0], "%Y-%m-%d"
+              daily[-1][0],
+              "%Y-%m-%d"
           ).strftime("%d %b %Y")
 
           svg.append(f"""
-          <line x1="35" y1="565" x2="965" y2="565"
+          <line x1="35" y1="565"
+                x2="965" y2="565"
                 stroke="#34305A"/>
-          <text x="40" y="590" fill="#8B91A8"
+
+          <text x="40" y="590"
+                fill="#8B91A8"
                 font-family="Arial,sans-serif"
                 font-size="11">
-            {start} — {end}  |  TOP LANGUAGE: {html.escape(top_language)}
+            {start} — {end} |
+            TOP LANGUAGE: {html.escape(top_language)}
           </text>
-          <text x="960" y="590" fill="#00E5FF"
+
+          <text x="960" y="590"
+                fill="#00E5FF"
                 text-anchor="end"
                 font-family="Arial,sans-serif"
                 font-size="11">
             POWERED BY WAKATIME
           </text>
+
           </svg>
           """)
+
+          # ==========================================
+          # 11. SAVE SVG DASHBOARD
+          # ==========================================
 
           os.makedirs("assets", exist_ok=True)
 
@@ -361,18 +562,37 @@ jobs:
           ) as f:
               f.write("\n".join(svg))
 
-          # Update README section
+          # ==========================================
+          # 12. UPDATE README WAKATIME SECTION
+          # ==========================================
+
           start_marker = "<!--START_SECTION:waka-->"
           end_marker = "<!--END_SECTION:waka-->"
 
-          with open("README.md", "r", encoding="utf-8") as f:
+          with open(
+              "README.md",
+              "r",
+              encoding="utf-8"
+          ) as f:
               readme = f.read()
 
-          if start_marker not in readme or end_marker not in readme:
-              raise Exception("WakaTime README markers missing")
+          if (
+              start_marker not in readme
+              or end_marker not in readme
+          ):
+              raise Exception(
+                  "WakaTime README markers missing"
+              )
 
-          before, remainder = readme.split(start_marker, 1)
-          _, after = remainder.split(end_marker, 1)
+          before, remainder = readme.split(
+              start_marker,
+              1
+          )
+
+          _, after = remainder.split(
+              end_marker,
+              1
+          )
 
           dashboard = """
           <div align="center">
@@ -392,12 +612,20 @@ jobs:
               + after
           )
 
-          with open("README.md", "w", encoding="utf-8") as f:
+          with open(
+              "README.md",
+              "w",
+              encoding="utf-8"
+          ) as f:
               f.write(updated)
 
           print("WakaTime dashboard generated successfully!")
+          print("Date range:", start, "to", end)
           print("Total coding time:", duration(total))
+          print("Daily average:", duration(average))
           print("Top language:", top_language)
+          print("Current streak:", streak, "days")
+
           PY
 
       - name: Commit updated dashboard
