@@ -405,7 +405,7 @@
                 fill="none"
                 stroke="#00E5FF"
                 stroke-width="20"
-                stroke-dasharray="321.41 149.83"
+                stroke-dasharray="326.97 144.27"
                 stroke-dashoffset="0.00"
                 transform="rotate(-90 790 385)"/>
         
@@ -429,7 +429,7 @@
               text-anchor="end"
               font-family="Arial,sans-serif"
               font-size="11">
-          68.2%
+          69.4%
         </text>
         
 
@@ -439,7 +439,7 @@
                 stroke="#A78BFA"
                 stroke-width="20"
                 stroke-dasharray="105.45 365.79"
-                stroke-dashoffset="-321.41"
+                stroke-dashoffset="-326.97"
                 transform="rotate(-90 790 385)"/>
         
 
@@ -472,7 +472,7 @@
                 stroke="#F472B6"
                 stroke-width="20"
                 stroke-dasharray="38.60 432.64"
-                stroke-dashoffset="-426.86"
+                stroke-dashoffset="-432.41"
                 transform="rotate(-90 790 385)"/>
         
 
@@ -504,8 +504,8 @@
                 fill="none"
                 stroke="#34D399"
                 stroke-width="20"
-                stroke-dasharray="5.55 465.68"
-                stroke-dashoffset="-465.46"
+                stroke-dasharray="0.22 471.01"
+                stroke-dashoffset="-471.01"
                 transform="rotate(-90 790 385)"/>
         
 
@@ -519,44 +519,11 @@
               fill="#DCE3F5"
               font-family="Arial,sans-serif"
               font-size="12">
-          Other
-        </text>
-
-        <text x="970"
-              y="431"
-              fill="#8F9AB5"
-              text-anchor="end"
-              font-family="Arial,sans-serif"
-              font-size="11">
-          1.2%
-        </text>
-        
-
-        <circle cx="790" cy="385"
-                r="75"
-                fill="none"
-                stroke="#FBBF24"
-                stroke-width="20"
-                stroke-dasharray="0.22 471.01"
-                stroke-dashoffset="-471.01"
-                transform="rotate(-90 790 385)"/>
-        
-
-        <circle cx="900"
-                cy="464"
-                r="5"
-                fill="#FBBF24"/>
-
-        <text x="913"
-              y="468"
-              fill="#DCE3F5"
-              font-family="Arial,sans-serif"
-              font-size="12">
           JSON
         </text>
 
         <text x="970"
-              y="468"
+              y="431"
               fill="#8F9AB5"
               text-anchor="end"
               font-family="Arial,sans-serif"
@@ -571,7 +538,7 @@
           font-family="Arial,sans-serif"
           font-size="19"
           font-weight="bold">
-      5
+      4
     </text>
 
     <text x="790" y="402"
