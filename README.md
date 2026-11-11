@@ -130,15 +130,22 @@ Interests:
 
 <div align="center">
 
+
+<div align="center">
+
 # ◈ 03 — GITHUB PERFORMANCE
 
 <sub>MY DEVELOPMENT STATISTICS</sub>
 
 <br/><br/>
 
-<img height="180" src="https://github-readme-stats-eight-theta.vercel.app/api?username=suryadev111&cache_seconds=7200&layout=compact&theme=radical&border_radius=12" />
+<img height="180"
+src="https://github-readme-stats-eight-theta.vercel.app/api?username=suryadev111&cache_seconds=21600&layout=compact&theme=radical&border_radius=12"
+alt="GitHub Statistics" />
 
-<img height="180" src="https://streak-stats.demolab.com/?user=suryadev111&theme=radical&hide_border=true&cache_seconds=86400" />
+<img height="180"
+src="https://streak-stats.demolab.com/?user=suryadev111&theme=radical&hide_border=true&timezone=Asia%2FKolkata"
+alt="GitHub Contribution Streak" />
 
 </div>
 
