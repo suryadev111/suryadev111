@@ -130,9 +130,6 @@ Interests:
 
 <div align="center">
 
-
-<div align="center">
-
 # ◈ 03 — GITHUB PERFORMANCE
 
 <sub>MY DEVELOPMENT STATISTICS</sub>
@@ -159,7 +156,9 @@ alt="GitHub Contribution Streak" />
 
 <br/><br/>
 
-<img src="https://trophy.ryglcloud.net/?username=suryadev111&theme=radical&no-frame=true&no-bg=true&margin-w=4&cache_seconds=86400" width="100%" />
+<img src="./achievements.svg"
+     width="100%"
+     alt="GitHub Achievements" />
 
 </div>
 
@@ -173,7 +172,9 @@ alt="GitHub Contribution Streak" />
 
 <br/><br/>
 
-<img src="./activity-graph.svg" width="100%" alt="Contribution Activity Graph" />
+<img src="./activity-graph.svg"
+     width="100%"
+     alt="Contribution Activity Graph" />
 
 </div>
 
@@ -187,7 +188,9 @@ alt="GitHub Contribution Streak" />
 
 <br/><br/>
 
-<img src="https://ghchart.rshah.org/00E5FF/suryadev111" width="100%" alt="GitHub Contribution Calendar" />
+<img src="https://ghchart.rshah.org/00E5FF/suryadev111"
+     width="100%"
+     alt="GitHub Contribution Calendar" />
 
 </div>
 
@@ -201,7 +204,9 @@ alt="GitHub Contribution Streak" />
 
 <br/><br/>
 
-<img src="https://raw.githubusercontent.com/suryadev111/suryadev111/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Dark Contribution Snake Animation" />
+<img src="https://raw.githubusercontent.com/suryadev111/suryadev111/output/github-contribution-grid-snake-dark.svg"
+     width="100%"
+     alt="Dark Contribution Snake Animation" />
 
 </div>
 
