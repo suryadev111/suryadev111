@@ -3,18 +3,26 @@ name: Generate GitHub Profile Analytics
 
 on:
   workflow_dispatch:
+
   push:
     branches:
       - main
+
   schedule:
     - cron: "17 0 * * *"
 
 permissions:
   contents: write
 
+concurrency:
+  group: github-profile-analytics
+  cancel-in-progress: false
+
 jobs:
   generate:
+    name: Generate Profile Analytics
     runs-on: ubuntu-latest
+    timeout-minutes: 20
 
     steps:
       # 1. GitHub Statistics
@@ -28,6 +36,7 @@ jobs:
           base: header, activity, community, repositories, metadata
           config_timezone: Asia/Kolkata
           config_display: large
+          config_output: svg
           output_action: commit
 
       # 2. Most Used Programming Languages
@@ -39,6 +48,7 @@ jobs:
           filename: top-languages.svg
           template: classic
           base: ""
+          config_output: svg
           plugin_languages: yes
           plugin_languages_limit: 8
           plugin_languages_sections: most-used
@@ -53,13 +63,14 @@ jobs:
           filename: contribution-calendar.svg
           template: classic
           base: ""
+          config_output: svg
           plugin_calendar: yes
           plugin_calendar_limit: 1
           config_timezone: Asia/Kolkata
           output_action: commit
 
       # 4. GitHub Achievements
-      - name: Generate Achievements
+      - name: Generate GitHub Achievements
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
@@ -67,6 +78,7 @@ jobs:
           filename: achievements.svg
           template: classic
           base: ""
+          config_output: svg
           plugin_achievements: yes
           plugin_achievements_display: compact
           output_action: commit
