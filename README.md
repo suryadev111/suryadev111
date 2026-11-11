@@ -157,9 +157,11 @@ alt="GitHub Contribution Streak" />
 
 <br/><br/>
 
-<img src="https://github-profile-trophy.vercel.app/?username=suryadev111&theme=radical&no-frame=true&no-bg=true&column=4&margin-w=10"
+
+<img src="https://github-profile-trophy.vercel.app/?username=suryadev111&theme=radical&no-frame=true&no-bg=true&column=4"
      width="100%"
      alt="GitHub Profile Trophies" />
+
 
 </div>
 
