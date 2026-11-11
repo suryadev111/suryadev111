@@ -148,6 +148,7 @@ alt="GitHub Contribution Streak" />
 
 ---
 
+
 <div align="center">
 
 # ◈ 04 — ACHIEVEMENTS UNLOCKED
@@ -156,13 +157,14 @@ alt="GitHub Contribution Streak" />
 
 <br/><br/>
 
-<img src="./achievements.svg"
+<img src="https://github-profile-trophy.vercel.app/?username=suryadev111&theme=radical&no-frame=true&no-bg=true&column=4&margin-w=10"
      width="100%"
-     alt="GitHub Achievements" />
+     alt="GitHub Profile Trophies" />
 
 </div>
 
 ---
+
 
 <div align="center">
 
