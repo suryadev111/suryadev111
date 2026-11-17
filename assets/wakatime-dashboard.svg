@@ -95,7 +95,7 @@
           font-family="Arial,sans-serif"
           font-size="23"
           font-weight="bold">
-      1h 5m 28s
+      26m 43s
     </text>
     
 
@@ -117,7 +117,7 @@
           font-family="Arial,sans-serif"
           font-size="23"
           font-weight="bold">
-      9m 21s
+      3m 49s
     </text>
     
 
@@ -139,7 +139,7 @@
           font-family="Arial,sans-serif"
           font-size="23"
           font-weight="bold">
-      Tue, 10 Nov
+      Wed, 11 Nov
     </text>
     
 
@@ -198,7 +198,7 @@
           text-anchor="middle"
           font-family="Arial,sans-serif"
           font-size="11">
-      Tue
+      Wed
     </text>
 
     <text x="76"
@@ -207,7 +207,7 @@
           text-anchor="middle"
           font-family="Arial,sans-serif"
           font-size="9">
-      39m
+      14m
     </text>
     
 
@@ -217,9 +217,9 @@
           rx="8"
           fill="#20243A"/>
 
-    <rect x="133" y="433.1"
+    <rect x="133" y="368.4"
           width="42"
-          height="66.9"
+          height="131.6"
           rx="8"
           fill="url(#cyan)"/>
 
@@ -228,16 +228,16 @@
           text-anchor="middle"
           font-family="Arial,sans-serif"
           font-size="11">
-      Wed
+      Thu
     </text>
 
     <text x="154"
-          y="423.1"
+          y="358.4"
           fill="#FFFFFF"
           text-anchor="middle"
           font-family="Arial,sans-serif"
           font-size="9">
-      14m
+      9m
     </text>
     
 
@@ -247,9 +247,9 @@
           rx="8"
           fill="#20243A"/>
 
-    <rect x="211" y="453.7"
+    <rect x="211" y="497.0"
           width="42"
-          height="46.3"
+          height="3.0"
           rx="8"
           fill="url(#cyan)"/>
 
@@ -258,40 +258,10 @@
           text-anchor="middle"
           font-family="Arial,sans-serif"
           font-size="11">
-      Thu
-    </text>
-
-    <text x="232"
-          y="443.7"
-          fill="#FFFFFF"
-          text-anchor="middle"
-          font-family="Arial,sans-serif"
-          font-size="9">
-      9m
-    </text>
-    
-
-    <rect x="289" y="310"
-          width="42"
-          height="190"
-          rx="8"
-          fill="#20243A"/>
-
-    <rect x="289" y="497.0"
-          width="42"
-          height="3.0"
-          rx="8"
-          fill="url(#cyan)"/>
-
-    <text x="310" y="525"
-          fill="#A5ADC3"
-          text-anchor="middle"
-          font-family="Arial,sans-serif"
-          font-size="11">
       Fri
     </text>
 
-    <text x="310"
+    <text x="232"
           y="487.0"
           fill="#FFFFFF"
           text-anchor="middle"
@@ -301,15 +271,45 @@
     </text>
     
 
+    <rect x="289" y="310"
+          width="42"
+          height="190"
+          rx="8"
+          fill="#20243A"/>
+
+    <rect x="289" y="449.7"
+          width="42"
+          height="50.3"
+          rx="8"
+          fill="url(#cyan)"/>
+
+    <text x="310" y="525"
+          fill="#A5ADC3"
+          text-anchor="middle"
+          font-family="Arial,sans-serif"
+          font-size="11">
+      Sat
+    </text>
+
+    <text x="310"
+          y="439.7"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          font-family="Arial,sans-serif"
+          font-size="9">
+      4m
+    </text>
+    
+
     <rect x="367" y="310"
           width="42"
           height="190"
           rx="8"
           fill="#20243A"/>
 
-    <rect x="367" y="482.3"
+    <rect x="367" y="497.0"
           width="42"
-          height="17.7"
+          height="3.0"
           rx="8"
           fill="url(#cyan)"/>
 
@@ -318,16 +318,16 @@
           text-anchor="middle"
           font-family="Arial,sans-serif"
           font-size="11">
-      Sat
+      Sun
     </text>
 
     <text x="388"
-          y="472.3"
+          y="487.0"
           fill="#FFFFFF"
           text-anchor="middle"
           font-family="Arial,sans-serif"
           font-size="9">
-      4m
+      0m
     </text>
     
 
@@ -348,7 +348,7 @@
           text-anchor="middle"
           font-family="Arial,sans-serif"
           font-size="11">
-      Sun
+      Mon
     </text>
 
     <text x="466"
@@ -378,7 +378,7 @@
           text-anchor="middle"
           font-family="Arial,sans-serif"
           font-size="11">
-      Mon
+      Tue
     </text>
 
     <text x="544"
@@ -405,7 +405,7 @@
                 fill="none"
                 stroke="#00E5FF"
                 stroke-width="20"
-                stroke-dasharray="420.23 51.01"
+                stroke-dasharray="374.60 96.64"
                 stroke-dashoffset="0.00"
                 transform="rotate(-90 790 385)"/>
         
@@ -429,7 +429,7 @@
               text-anchor="end"
               font-family="Arial,sans-serif"
               font-size="11">
-          89.2%
+          79.5%
         </text>
         
 
@@ -438,8 +438,8 @@
                 fill="none"
                 stroke="#A78BFA"
                 stroke-width="20"
-                stroke-dasharray="31.35 439.89"
-                stroke-dashoffset="-420.23"
+                stroke-dasharray="76.83 394.41"
+                stroke-dashoffset="-374.60"
                 transform="rotate(-90 790 385)"/>
         
 
@@ -462,7 +462,7 @@
               text-anchor="end"
               font-family="Arial,sans-serif"
               font-size="11">
-          6.7%
+          16.3%
         </text>
         
 
@@ -471,8 +471,8 @@
                 fill="none"
                 stroke="#F472B6"
                 stroke-width="20"
-                stroke-dasharray="11.39 459.85"
-                stroke-dashoffset="-451.58"
+                stroke-dasharray="13.31 457.92"
+                stroke-dashoffset="-451.43"
                 transform="rotate(-90 790 385)"/>
         
 
@@ -486,7 +486,7 @@
               fill="#DCE3F5"
               font-family="Arial,sans-serif"
               font-size="12">
-          Java
+          Markdown
         </text>
 
         <text x="970"
@@ -495,7 +495,7 @@
               text-anchor="end"
               font-family="Arial,sans-serif"
               font-size="11">
-          2.4%
+          2.8%
         </text>
         
 
@@ -504,8 +504,8 @@
                 fill="none"
                 stroke="#34D399"
                 stroke-width="20"
-                stroke-dasharray="5.43 465.81"
-                stroke-dashoffset="-462.97"
+                stroke-dasharray="3.77 467.47"
+                stroke-dashoffset="-464.74"
                 transform="rotate(-90 790 385)"/>
         
 
@@ -519,7 +519,7 @@
               fill="#DCE3F5"
               font-family="Arial,sans-serif"
               font-size="12">
-          Markdown
+          Other
         </text>
 
         <text x="970"
@@ -528,7 +528,7 @@
               text-anchor="end"
               font-family="Arial,sans-serif"
               font-size="11">
-          1.2%
+          0.8%
         </text>
         
 
@@ -537,8 +537,8 @@
                 fill="none"
                 stroke="#FBBF24"
                 stroke-width="20"
-                stroke-dasharray="1.54 469.70"
-                stroke-dashoffset="-468.40"
+                stroke-dasharray="1.55 469.69"
+                stroke-dashoffset="-468.51"
                 transform="rotate(-90 790 385)"/>
         
 
@@ -552,7 +552,7 @@
               fill="#DCE3F5"
               font-family="Arial,sans-serif"
               font-size="12">
-          Other
+          JavaScript
         </text>
 
         <text x="970"
@@ -570,8 +570,8 @@
                 fill="none"
                 stroke="#60A5FA"
                 stroke-width="20"
-                stroke-dasharray="0.63 470.61"
-                stroke-dashoffset="-469.94"
+                stroke-dasharray="0.65 470.58"
+                stroke-dashoffset="-470.06"
                 transform="rotate(-90 790 385)"/>
         
 
@@ -585,7 +585,7 @@
               fill="#DCE3F5"
               font-family="Arial,sans-serif"
               font-size="12">
-          JavaScript
+          TypeScript
         </text>
 
         <text x="970"
@@ -604,7 +604,7 @@
           font-family="Arial,sans-serif"
           font-size="19"
           font-weight="bold">
-      10
+      9
     </text>
 
     <text x="790" y="402"
@@ -624,7 +624,7 @@
       fill="#8B91A8"
       font-family="Arial,sans-serif"
       font-size="11">
-  10 Nov 2026 — 16 Nov 2026 |
+  11 Nov 2026 — 17 Nov 2026 |
   TOP LANGUAGE: Python
 </text>
 
